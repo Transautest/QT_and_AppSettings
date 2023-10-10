@@ -1,0 +1,1203 @@
+<PBagUI name="tp.analysis.description">
+  <gridlinecolor r="0" g="56" b="94"/>
+  <context>tp.analysis.description</context>
+  <property name="MinDistanceGroup" type="Group">
+    <label>
+      <string id="15D1F6F1-B46E-4A6B-9513-106F32604B4A">Minimum distance</string>
+    </label>
+    <property name="MinDistance" type="double" dimension="Length">
+      <label>
+        <string id="1382361B-C97C-4B36-B237-3D4CB027ECA2">Distance</string>
+      </label>
+      <tooltip>
+        <string id="12038BDC-6A40-4F52-8CA2-76CE3F5F2474">Minimum distance</string>
+      </tooltip>
+      <decimals>6</decimals>
+    </property>
+    <property name="FirstPoint" type="Point3d">
+      <label>
+        <string id="3CAFB3C1-7D14-4C76-978C-51D0A85071DE">Start Point</string>
+      </label>
+      <tooltip>
+        <string id="4B24A4BC-0C08-4959-A063-5491EB34FC38">Start Point</string>
+      </tooltip>
+      <decimals>6</decimals>
+    </property>
+    <property name="SecondPoint" type="Point3d">
+      <label>
+        <string id="6964B606-64C1-443A-9059-0C6555C4F7AC">End Point</string>
+      </label>
+      <tooltip>
+        <string id="C983CCCC-3685-4BC2-91DC-C8E3377D97DB">End Point</string>
+      </tooltip>
+      <decimals>6</decimals>
+    </property>
+    <property name="ParametersGroup" type="Group">
+      <label>
+        <string id="11B52035-31B9-4D2E-8C19-A1E73EA99663">Parameters on entities</string>
+      </label>
+      <property name="MD_MOVENR1" type="integer">
+        <label>
+          <string id="728F0BC6-CA12-4327-BA6F-9104E212CB6B">Number</string>
+        </label>
+        <tooltip>
+          <string id="5BBE2EB0-445B-41A1-87FF-87757738454C">Number</string>
+        </tooltip>
+        <readonly>1</readonly>
+      </property>
+      <property name="Tpar1" type="double">
+        <label>
+          <string id="D736A2E6-7838-4A93-B141-142DFAEB7E4B">Parameter of first curve</string>
+        </label>
+        <tooltip>
+          <string id="3D6ADA34-6AFA-4958-8B68-2E49DBFA47C6">Parameter of first curve</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="Vpar1" type="double">
+        <label>
+          <string id="9F5ED273-DB5C-4A8A-9BE8-08E9270A68EB">V Parameter of first face</string>
+        </label>
+        <tooltip>
+          <string id="C5D0988F-A983-4878-919B-303B32D54DFA">V Parameter of first face</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="Upar1" type="double">
+        <label>
+          <string id="827E4104-99D1-43ED-A37B-A9D012158A60">U Parameter of first face</string>
+        </label>
+        <tooltip>
+          <string id="26153131-98DE-45F8-935E-1203269262D0">U Parameter of first face</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="MD_MOVENR2" type="integer">
+        <label>
+          <string id="2CAF32A0-9E32-493B-9063-A551915FBC88">Number</string>
+        </label>
+        <tooltip>
+          <string id="85F8DFEB-25A3-470E-B8E0-752E58F3BD0D">Number</string>
+        </tooltip>
+        <readonly>1</readonly>
+      </property>
+      <property name="Tpar2" type="double">
+        <label>
+          <string id="AC4619BB-FD2E-41CC-918C-AC89EED7B46B">Parameter of second curve</string>
+        </label>
+        <tooltip>
+          <string id="A67ABD34-8C35-47DC-A644-2F1F40930402">Parameter of second curve</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="Upar2" type="double">
+        <label>
+          <string id="C50FF395-2BEC-4D14-A1B1-670CFC120CDE">U Parameter of second face</string>
+        </label>
+        <tooltip>
+          <string id="DDAECA29-5DA8-4FDB-8B7E-6410BA84ACA3">U Parameter of second face</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="Vpar2" type="double">
+        <label>
+          <string id="63B45242-3B8B-42AA-8CFF-3DDCF8F3FC1A">V Parameter of second face</string>
+        </label>
+        <tooltip>
+          <string id="C0A54139-662C-4AAF-AD67-334E397C2277">V Parameter of second face</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+    </property>
+    <property name="DeltaGroup" type="Group">
+      <label>
+        <string id="91E3DD50-8A14-44D2-86EF-BCC5F1DE21FF">Delta coordinates</string>
+      </label>
+      <property name="Deltax" type="double" dimension="Length">
+        <label>
+          <string id="3FA57E1E-8785-48EE-AD38-B8A9C0460ED8">Delta on X axis</string>
+        </label>
+        <tooltip>
+          <string id="725B812D-009A-4244-AC12-27787FF75093">DeltaX</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="Deltay" type="double" dimension="Length">
+        <label>
+          <string id="C4231F22-A529-4321-A987-EDF1A238F237">Delta on Y axis</string>
+        </label>
+        <tooltip>
+          <string id="4DAD7CE1-A634-4501-9E99-F29A6C402454">DeltaY</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+      <property name="Deltaz" type="double" dimension="Length">
+        <label>
+          <string id="280DB3B7-3081-4653-8DCC-4094B16AA206">Delta on Z axis</string>
+        </label>
+        <tooltip>
+          <string id="CB536BEA-FFFE-4EB2-8B69-409208B36DF1">DeltaZ</string>
+        </tooltip>
+        <decimals>6</decimals>
+      </property>
+    </property>
+  </property>
+  <property name="tpanalysismodel:refsystemtype" type="enumerator">
+    <label>
+      <string id="263C45E8-8A08-4DF2-B3A9-74AC485DAB98">Ref system type</string>
+    </label>
+    <tooltip>
+      <string id="01A24932-70BC-42F7-A14A-F7DD680AEACE">Ref system type</string>
+    </tooltip>
+    <readonly>1</readonly>
+    <enumlabels>
+      <label>
+        <string id="AB5E0FB9-42EB-4A47-8FCD-58FC913CDB7C">NCS</string>
+      </label>
+      <label>
+        <string id="58E54A96-8A74-46E8-B4CD-049DF252BAEA">Frame</string>
+      </label>
+      <label>
+        <string id="216C3F05-C426-4F3F-82F5-89D7028A3EA4">Wp</string>
+      </label>
+    </enumlabels>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:referencepoint" type="Coord3d" dimension="Length">
+    <label>
+      <string id="45129371-8AD5-40BB-BD76-EA21FDA8E8F3">Reference Point</string>
+    </label>
+    <tooltip>
+      <string id="BDA382A6-E882-432A-A226-4778E086E014">Coordinates</string>
+    </tooltip>
+    <decimals>6</decimals>
+    <readonly>1</readonly>
+    <units>mm</units>
+  </property>
+  <property name="tpanalysismodel:Move1Info" type="Group">
+    <label>
+      <string id="E2C28C0B-21D5-4E14-BF8E-1327AC412C72">Movement Info</string>
+    </label>
+    <property name="tpanalysismodel:Move1Info:JOBNAME" type="string">
+      <label>
+        <string id="4BE85F2E-A2AF-4E9C-9E7E-7D30126D1CB6">Jobname</string>
+      </label>
+      <tooltip>
+        <string id="2E850D02-B471-4D28-B5CD-7B3E9D56E880">Jobname</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:GTYPE" type="string">
+      <label>
+        <string id="7EBEB8BE-C164-4331-882F-21BF35EEA78D">Movement</string>
+      </label>
+      <tooltip>
+        <string id="6BC46241-F5B0-4840-B16E-6AD7C9D741D3">Movement</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:FEEDRATE" type="integer">
+      <label>
+        <string id="8647A116-9EFA-45C2-A61A-D406DAA5D753">Feedrate</string>
+      </label>
+      <tooltip>
+        <string id="C4A64069-E598-428E-9086-9FD76B1E8AA5">Feedrate</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:FEEDRATETURNING" type="double">
+      <label>
+        <string id="11599F8A-AFC3-4768-9FFF-278CC78724D4">Feedrate</string>
+      </label>
+      <tooltip>
+        <string id="108ED1DE-3036-4350-BBC7-6EACE3EDEE1A">Feedrate</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:SPEED" type="integer">
+      <label>
+        <string id="3F58635D-20DE-4606-B963-388249AFE82C">Spindle speed</string>
+      </label>
+      <tooltip>
+        <string id="E306D0A7-EA2B-45A8-BF60-75930B849087">Spindle speed</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CUTTINGSPEED" type="double">
+      <label>
+        <string id="4599168E-3C3D-4DAE-8B25-F3995C428B44">cutting speed</string>
+      </label>
+      <tooltip>
+        <string id="21B44019-6A17-4811-B475-CA1A87F341D3">cutting speed</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:MOVENR" type="integer">
+      <label>
+        <string id="A34052C4-CFCA-4917-B3BC-221FC193A0F7">Number</string>
+      </label>
+      <tooltip>
+        <string id="0EC4C639-094D-42E6-B0CB-ACC604455CFA">Number</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CNTPOINTS" type="integer">
+      <label>
+        <string id="7D779495-26A3-40A8-BAF1-AB01F2737E80">CNTPOINTS</string>
+      </label>
+      <tooltip>
+        <string id="6AC6369B-052F-4BE7-BD6F-E2E3790E2F88">CNTPOINTS</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CNTG0" type="integer">
+      <label>
+        <string id="36721566-5223-4B5D-87C2-64700C89D107">CNTG0</string>
+      </label>
+      <tooltip>
+        <string id="FE14F49D-5EFF-4E4B-88D7-5D1E9FCE5195">CNTG0</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CNTG1" type="integer">
+      <label>
+        <string id="A860060A-1A83-4F8A-9D22-49013D60B2A4">CNTG1</string>
+      </label>
+      <tooltip>
+        <string id="0B13F174-51AC-4490-B658-D91C345E7DCF">CNTG1</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CNTG2" type="integer">
+      <label>
+        <string id="1DCDB167-44C5-4220-8A6D-8289997040DC">CNTG2</string>
+      </label>
+      <tooltip>
+        <string id="8A2A988F-DE9F-4FE2-B412-4BCC68915F2C">CNTG2</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CNTG3" type="integer">
+      <label>
+        <string id="27A92595-B129-4F18-88DA-5A968885DE92">CNTG3</string>
+      </label>
+      <tooltip>
+        <string id="5D4864FA-50C0-4E34-8667-914534754DD5">CNTG3</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:CNT5X" type="integer">
+      <label>
+        <string id="C3BCBAB7-C8E1-4E2D-8A23-1916DC10E44F">CNT5X</string>
+      </label>
+      <tooltip>
+        <string id="3E78BA0F-4F2A-4E4F-9C67-FC707BF35990">CNT5X</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:TANGLEA" type="double"  dimension="Angle">
+      <label>
+        <string id="B97AA17D-BBD2-4140-8D7F-06E3E3378841">A</string>
+      </label>
+      <tooltip>
+        <string id="7FC308BF-6AD7-4A0E-B6D5-EC41F85EEA8C">A</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:TANGLEB" type="double"  dimension="Angle">
+      <label>
+        <string id="D73C3FCF-CD79-4210-9E9D-A0E27C583AB3">B</string>
+      </label>
+      <tooltip>
+        <string id="F54FC8CF-A6C6-4F63-8D68-35EFA8506574">B</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move1Info:TANGLEC" type="double"  dimension="Angle">
+      <label>
+        <string id="7C7F17C8-60EA-4583-B3AA-762DD97B8148">C</string>
+      </label>
+      <tooltip>
+        <string id="C89BEF33-E80B-4C68-ACE0-2CF6269F785A">C</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:measurepoint0" type="Group">
+    <label>
+      <string id="B88C8FB8-EB43-4DED-B83E-3E0B2B7052A1">Measure Point</string>
+    </label>
+    <property name="tpanalysismodel:Move1Geo:mp0_X" type="double" dimension="Length">
+      <label>
+        <string id="2E312B6E-3AAF-4D42-9E27-45AB684EF1D0">X</string>
+      </label>
+      <tooltip>
+        <string id="4341E270-DA3D-461F-BDDF-5CBB70B586DB">X</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp0_Y" type="double" dimension="Length">
+      <label>
+        <string id="125D0A7A-B73B-48C0-BDCF-6FB642C06862">Y</string>
+      </label>
+      <tooltip>
+        <string id="91B862D7-7F8F-4E8F-9106-3FE3FF5B428E">Y</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp0_Z" type="double" dimension="Length">
+      <label>
+        <string id="AE4EE48F-2090-424F-AB4F-A45C5262E54E">Z</string>
+      </label>
+      <tooltip>
+        <string id="44D180AB-9505-4F2A-AC2E-A98E8E610CBD">Z</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp0_D" type="double" dimension="Length">
+      <label>
+        <string id="EF63F362-D361-4B8E-9C72-DEAE364E3953">Deviation</string>
+      </label>
+      <tooltip>
+        <string id="D1A4AC64-DB6E-4851-9D7D-F772F72369BF">Deviation</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:measurepoint1" type="Group">
+    <label>
+      <string id="D9619564-FDE1-43F2-AE7F-A06CF04EC8D1">Start point</string>
+    </label>
+    <property name="tpanalysismodel:Move1Geo:mp1_X" type="double" dimension="Length">
+      <label>
+        <string id="483D0D92-C6BF-4CEC-A2E3-9576B11B9239">X</string>
+      </label>
+      <tooltip>
+        <string id="3CF0F1D2-9EA9-4543-ADDF-CA68A0392C6A">X</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp1_Y" type="double" dimension="Length">
+      <label>
+        <string id="F614422E-59DC-4922-B15A-CB215F0E4076">Y</string>
+      </label>
+      <tooltip>
+        <string id="D19054D7-2318-443F-8960-4B8F3573D4C8">Y</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp1_Z" type="double" dimension="Length">
+      <label>
+        <string id="7DF96818-5E31-403A-899B-F04F921AC721">Z</string>
+      </label>
+      <tooltip>
+        <string id="184CC4C3-CC0F-43A2-8933-B96CF1999678">Z</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp1_D" type="double" dimension="Length">
+      <label>
+        <string id="D06AC220-7205-4DEB-A801-188DBB739FFE">Deviation</string>
+      </label>
+      <tooltip>
+        <string id="85E0BBCC-9719-498C-B89C-160F0510FC61">Deviation</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:measurepoint2" type="Group">
+    <label>
+      <string id="CC2BD66C-FD9B-4A1C-923C-C8347473127E">End Point</string>
+    </label>
+    <property name="tpanalysismodel:Move1Geo:mp2_X" type="double" dimension="Length">
+      <label>
+        <string id="6EB86BC8-F8F5-477E-A0AD-B9D73D673B7D">X</string>
+      </label>
+      <tooltip>
+        <string id="0FFD612D-17FC-4733-9389-EB2AFF5592F5">X</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp2_Y" type="double" dimension="Length">
+      <label>
+        <string id="519C7B53-F415-4A24-9CA4-192590F3E4BA">Y</string>
+      </label>
+      <tooltip>
+        <string id="95EE9C27-4D43-41FD-BB11-C2F45E62B7D7">Y</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp2_Z" type="double" dimension="Length">
+      <label>
+        <string id="ADF57280-C095-4138-908F-F3AFC41C2343">Z</string>
+      </label>
+      <tooltip>
+        <string id="989BB849-5D80-4E55-ACE7-36863D2C544D">Z</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:mp2_D" type="double" dimension="Length">
+      <label>
+        <string id="DCC19229-37E7-45D8-B6C2-2EBCCCB6EDD3">Deviation</string>
+      </label>
+      <tooltip>
+        <string id="EFD433A8-5177-49C4-B3DD-F56B62FCD5D2">Deviation</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:centerpoint" type="Coord3d" dimension="Length">
+    <label>
+      <string id="78B9696E-2F03-4A29-890C-379968D1FCAC">Center Point</string>
+    </label>
+    <tooltip>
+      <string id="EC91ED29-39D3-4B32-8BE0-64C87775CA02">Coordinates</string>
+    </tooltip>
+    <decimals>6</decimals>
+    <readonly>1</readonly>
+    <units>mm</units>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:DimensionLinear" type="Group">
+    <label>
+      <string id="ED1561AE-529F-40FB-8A73-E8F8C8FBEC8E">Dimension</string>
+    </label>
+    <property name="tpanalysismodel:Move1Geo:Length" type="double" dimension="Length">
+      <label>
+        <string id="269BB455-F2FE-449C-8F2A-543581289445">Length</string>
+      </label>
+      <tooltip>
+        <string id="2CB6481B-5EEC-428D-B3CE-7963C50A8804">Length</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:Radius_S" type="double" dimension="Length">
+      <label>
+        <string id="0832952E-02AC-442A-ABAA-F38CAC0F8734">Radius (S)</string>
+      </label>
+      <tooltip>
+        <string id="C4E404A7-84AE-4855-A8AD-074B11854449">Radius (S)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:Radius_E" type="double" dimension="Length">
+      <label>
+        <string id="A9E83A2B-CDA9-41AB-8F31-24DFC8477920">Radius (E)</string>
+      </label>
+      <tooltip>
+        <string id="7FE88D02-C748-4FDB-8D5B-40C4EBE6DED7">Radius (E)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:Angle_A" type="double"  dimension="Angle">
+      <label>
+        <string id="BFF8475C-68F1-4323-90AA-D428E6E52756">Angle (A)</string>
+      </label>
+      <tooltip>
+        <string id="38279440-1A47-4E39-A727-E00A912395B0">Angle (A)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:Angle_C" type="double"  dimension="Angle">
+      <label>
+        <string id="ED2FEB64-B364-4893-98C9-C48E2AA98C17">Angle (C)</string>
+      </label>
+      <tooltip>
+        <string id="3E03955C-15D8-4C9A-9EF7-4B018E7FF6AE">Angle (C)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move1Geo:Angle_E" type="double"  dimension="Angle">
+      <label>
+        <string id="57EB7972-7558-4D57-95F4-4DE09086CB0B">Angle (E)</string>
+      </label>
+      <tooltip>
+        <string id="D56F154A-E0A6-48D6-8C73-3F3895F0AC25">Angle (E)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move1Geo:Differences" type="Group">
+    <label>
+      <string id="F9566493-C614-4189-87AF-238CE3E48073">Differences (E-S)</string>
+    </label>
+    <property name="tpanalysismodel:Move1Geo:Delta" type="Coord3d" dimension="Length">
+      <label>
+        <string id="729635C2-5A69-4317-A6DE-3516C51B5011">Distance</string>
+      </label>
+      <tooltip>
+        <string id="691A02D6-084F-4712-86B5-3C4B849DFBE7">Distance</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move2Info" type="Group">
+    <label>
+      <string id="AB9DF897-2E10-4F32-ADA8-A03A791C658E">Movement Info</string>
+    </label>
+    <property name="tpanalysismodel:Move2Info:JOBNAME" type="string">
+      <label>
+        <string id="5F89F366-D457-413B-BDF8-C989C95DEEEF">Jobname</string>
+      </label>
+      <tooltip>
+        <string id="3A1172F4-BEED-443B-AC22-BFBDE364D480">Jobname</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:GTYPE" type="string">
+      <label>
+        <string id="F0FC640C-5C24-494C-884D-B0FA527CB7E2">Movement</string>
+      </label>
+      <tooltip>
+        <string id="07596BC0-DBD2-4392-ADAC-7D1DF3D71D92">Movement</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:FEEDRATE" type="integer">
+      <label>
+        <string id="50FEF1F7-8E9D-496B-8782-1C5955C507C3">Feedrate</string>
+      </label>
+      <tooltip>
+        <string id="4546D682-F7EF-44EC-A46F-9162965ED232">Feedrate</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:FEEDRATETURNING" type="double">
+      <label>
+        <string id="5F67BC2B-240A-49AB-BD9B-4C2B9CBF3F33">Feedrate</string>
+      </label>
+      <tooltip>
+        <string id="8008A73E-AD4E-415F-B366-EF121EF5EAE5">Feedrate</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:SPEED" type="integer">
+      <label>
+        <string id="9EA43ED5-76FF-46B3-881B-2558185E6286">Spindle speed</string>
+      </label>
+      <tooltip>
+        <string id="F48BF963-C249-49C9-BAFE-4CA32FFFFBF6">Spindle speed</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CUTTINGSPEED" type="double">
+      <label>
+        <string id="CBECEA0F-C98C-452F-9DE0-38B18D0FFBB6">Cutting speed</string>
+      </label>
+      <tooltip>
+        <string id="D5AF667B-54F9-4E30-8DEC-A73ECA7646D7">Cutting speed</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:MOVENR" type="integer">
+      <label>
+        <string id="3F2B7C1F-C985-44DD-A346-67563C744C21">Number</string>
+      </label>
+      <tooltip>
+        <string id="4706D0EF-24BF-48ED-9061-D6FCD2BFEEDA">Number</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CNTPOINTS" type="integer">
+      <label>
+        <string id="2A6D02F1-6B03-4962-863A-EA93E5BF200B">CNTPOINTS</string>
+      </label>
+      <tooltip>
+        <string id="1571D89B-5870-456C-B4FE-3210B0A3DAD8">CNTPOINTS</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CNTG0" type="integer">
+      <label>
+        <string id="A57ABDB2-51CA-4379-8D1E-14E534C88ECB">CNTG0</string>
+      </label>
+      <tooltip>
+        <string id="863C9031-D6D7-4675-AC51-EE6B9E57A316">CNTG0</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CNTG1" type="integer">
+      <label>
+        <string id="2F02F361-7488-43E0-BE77-FB565A9C97EF">CNTG1</string>
+      </label>
+      <tooltip>
+        <string id="D7039258-93DD-4D19-9741-4F2DF8061BC3">CNTG1</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CNTG2" type="integer">
+      <label>
+        <string id="95E7EE99-68D7-4B1B-B781-88ACFFF4380F">CNTG2</string>
+      </label>
+      <tooltip>
+        <string id="319CDD87-BCC3-4EB4-BA62-C1353AF3A9DF">CNTG2</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CNTG3" type="integer">
+      <label>
+        <string id="4019B694-9A69-437E-9498-12975405DBA2">CNTG3</string>
+      </label>
+      <tooltip>
+        <string id="59611F63-4372-45EA-8AE8-ABD5AA96CC16">CNTG3</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:CNT5X" type="integer">
+      <label>
+        <string id="DD2C5CA6-87E7-49B8-814A-A87A89344569">CNT5X</string>
+      </label>
+      <tooltip>
+        <string id="CE12F2CB-D429-4FF8-A5FB-54A95D94A76B">CNT5X</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:TANGLEA" type="double"  dimension="Angle">
+      <label>
+        <string id="2D1E94DD-13CE-429E-B66D-5308649D3AD9">A</string>
+      </label>
+      <tooltip>
+        <string id="51FBEEDF-F7FD-447C-BE4A-EA91622E17BC">A</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:TANGLEB" type="double"  dimension="Angle">
+      <label>
+        <string id="001891BA-D223-4623-827B-6DE67BD5049D">B</string>
+      </label>
+      <tooltip>
+        <string id="1C52F860-F4EA-4A5B-AE5C-7413022A6341">B</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+    <property name="tpanalysismodel:Move2Info:TANGLEC" type="double"  dimension="Angle">
+      <label>
+        <string id="86B8973C-C013-4AE4-B593-94FDB653E736">C</string>
+      </label>
+      <tooltip>
+        <string id="FA3AD97C-18A4-4CEF-9BF4-B83DF3832BE6">C</string>
+      </tooltip>
+      <readonly>1</readonly>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:measurepoint0" type="Group">
+    <label>
+      <string id="22DFA13B-5F51-43A0-A025-D4E3F902BD48">Measure Point</string>
+    </label>
+    <property name="tpanalysismodel:Move2Geo:mp0_X" type="double" dimension="Length">
+      <label>
+        <string id="23B7EE55-5C66-4A2B-97D3-EA2B6EBBCC38">X</string>
+      </label>
+      <tooltip>
+        <string id="035FF4CF-8EC0-4F4B-94B2-CB013A2C6DF4">X</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp0_Y" type="double" dimension="Length">
+      <label>
+        <string id="DDD9670C-DD1D-48A6-B036-6BD4EEE5505D">Y</string>
+      </label>
+      <tooltip>
+        <string id="D9CBA9D0-A93D-4798-B983-9216BC195790">Y</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp0_Z" type="double" dimension="Length">
+      <label>
+        <string id="B2DE8BA0-0925-4103-9C66-498E3DAE3574">Z</string>
+      </label>
+      <tooltip>
+        <string id="3B2FAF6D-7E3E-42CE-B87D-8CF74695AEB1">Z</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp0_D" type="double" dimension="Length">
+      <label>
+        <string id="D674B6FA-0ACA-4452-875A-E89D311BE6DF">Deviation</string>
+      </label>
+      <tooltip>
+        <string id="B297934C-C3C2-481B-8FC7-4803EB9C3814">Deviation</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:measurepoint1" type="Group">
+    <label>
+      <string id="CC8F94AF-DAE2-4A10-AD5D-1992635B9028">Start point</string>
+    </label>
+    <property name="tpanalysismodel:Move2Geo:mp1_X" type="double" dimension="Length">
+      <label>
+        <string id="FF415D4B-0F86-4581-9272-D8FE83F219B5">X</string>
+      </label>
+      <tooltip>
+        <string id="234922D6-A8B7-4AF5-B720-AD9C5BE5B83D">X</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp1_Y" type="double" dimension="Length">
+      <label>
+        <string id="0C486E38-6353-41EE-94DE-FE9786D7548B">Y</string>
+      </label>
+      <tooltip>
+        <string id="46F6FB94-883C-4FC1-86BC-B5097785BEAA">Y</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp1_Z" type="double" dimension="Length">
+      <label>
+        <string id="FC212CFD-D20A-49BD-B1CE-73404701B07C">Z</string>
+      </label>
+      <tooltip>
+        <string id="3E96321E-A66A-4646-A0A8-DC4C598E0986">Z</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp1_D" type="double" dimension="Length">
+      <label>
+        <string id="E1707CC2-34EC-40B3-B275-34C61F52D804">Deviation</string>
+      </label>
+      <tooltip>
+        <string id="EA4040BB-700B-4884-90FE-D4AF61A482EE">Deviation</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:measurepoint2" type="Group">
+    <label>
+      <string id="92A08BF7-620E-4444-ADF7-50B464B201BA">End Point</string>
+    </label>
+    <property name="tpanalysismodel:Move2Geo:mp2_X" type="double" dimension="Length">
+      <label>
+        <string id="57D113C9-0131-4478-8255-41E9172E514C">X</string>
+      </label>
+      <tooltip>
+        <string id="DA54EF86-B23A-456D-B136-CA7A3C447455">X</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp2_Y" type="double" dimension="Length">
+      <label>
+        <string id="EAF604D6-4C4B-4BF6-B0EE-08621D5E4B00">Y</string>
+      </label>
+      <tooltip>
+        <string id="11CE7869-DBBB-4C6A-AC22-3B27024AE25C">Y</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp2_Z" type="double" dimension="Length">
+      <label>
+        <string id="D4169E70-AB23-4E2E-94E9-10E75A355F21">Z</string>
+      </label>
+      <tooltip>
+        <string id="B961A583-8274-4888-A2AB-3009074F5DF5">Z</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:mp2_D" type="double" dimension="Length">
+      <label>
+        <string id="750AB41F-9B7F-43A5-A673-5FED2478C243">Deviation</string>
+      </label>
+      <tooltip>
+        <string id="18D75AF1-E981-4527-B855-07C4719FF500">Deviation</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:centerpoint" type="Coord3d" dimension="Length">
+    <label>
+      <string id="72267122-C261-4E96-B7DE-D56F32ED3A26">Center Point</string>
+    </label>
+    <tooltip>
+      <string id="9F172024-27B8-4C67-9A10-6076FBB1E55C">Coordinates</string>
+    </tooltip>
+    <decimals>6</decimals>
+    <readonly>1</readonly>
+    <units>mm</units>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:referencepoint" type="Coord3d" dimension="Length">
+    <label>
+      <string id="1BCB2060-3DF8-48FF-86D1-D4B641C4B996">Reference Point</string>
+    </label>
+    <tooltip>
+      <string id="18CBF218-6B79-4666-9315-685B948D1423">Coordinates</string>
+    </tooltip>
+    <decimals>6</decimals>
+    <readonly>1</readonly>
+    <units>mm</units>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:DimensionLinear" type="Group">
+    <label>
+      <string id="F51DDD02-E4C0-4B16-93EB-FCCAA93AB30C">Dimension</string>
+    </label>
+    <property name="tpanalysismodel:Move2Geo:Length" type="double" dimension="Length">
+      <label>
+        <string id="4FB63651-AF87-4880-8022-9ACCFD77AD5A">Length</string>
+      </label>
+      <tooltip>
+        <string id="3D2839E0-4B0D-487C-8B36-B208FEB6ED25">Length</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:Radius_S" type="double" dimension="Length">
+      <label>
+        <string id="82721E82-4EC0-4F7E-909B-33CE5F2E56CC">Radius (S)</string>
+      </label>
+      <tooltip>
+        <string id="02389A46-5BC2-4706-9CA2-2D9AF733461E">Radius (S)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:Radius_E" type="double" dimension="Length">
+      <label>
+        <string id="B38892B3-DA18-4D59-8FBD-A8E2B0F8689B">Radius (E)</string>
+      </label>
+      <tooltip>
+        <string id="4C2864D2-7674-46D1-8F26-B1601B00DEE8">Radius (E)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:Angle_A" type="double"  dimension="Angle">
+      <label>
+        <string id="0E643347-7BBC-4938-92B6-6749AF82E106">Angle (A)</string>
+      </label>
+      <tooltip>
+        <string id="A9B6611F-038B-4D35-B289-28EFF44F48ED">Angle (A)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:Angle_C" type="double"  dimension="Angle">
+      <label>
+        <string id="0E6B317A-1477-421E-A4F1-121B54082AF9">Angle (C)</string>
+      </label>
+      <tooltip>
+        <string id="6DB5B0D7-A116-4608-9A23-F74FEED68787">Angle (C)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+    <property name="tpanalysismodel:Move2Geo:Angle_E" type="double"  dimension="Angle">
+      <label>
+        <string id="A4F8FD06-5CB7-4F6E-997F-7388CF18C62F">Angle (E)</string>
+      </label>
+      <tooltip>
+        <string id="BCB2538F-D37D-4A3C-8748-D660F4D75E1D">Angle (E)</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <property name="tpanalysismodel:Move2Geo:Differences" type="Group">
+    <label>
+      <string id="99AB5CF4-63B9-45D8-A2D5-6A60A31CE0A3">Differences (E-S)</string>
+    </label>
+    <property name="tpanalysismodel:Move2Geo:Delta" type="Coord3d" dimension="Length">
+      <label>
+        <string id="53A15F34-D295-4BBC-80DF-495925B86FC4">Distance</string>
+      </label>
+      <tooltip>
+        <string id="D596D378-125F-441D-8042-0F06C35E9C82">Distance</string>
+      </tooltip>
+      <decimals>6</decimals>
+      <readonly>1</readonly>
+      <units>mm</units>
+    </property>
+  </property>
+  <!-->/property-->
+  <!--/PBagUI>
+ <PBagUI name="tp.analysis.settings"-->
+  <property name="tpanalysismodel:ToolpathSettings" type="Group">
+    <label>
+      <string id="4A0FC434-3E19-4741-83EF-1567C6063B93">Toolpath settings</string>
+    </label>
+    <!--property name="tpanalysismodel:ToolpathSettingsVisibility" type="Group">
+			<label>
+				<string id="6427DE2B-61C6-4C59-BB6C-46C7A3C2B4E4">Visibility</string>
+			</label>
+			<property name="TpFeedrates" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+				<label>
+				  <string id="852E2530-0D66-4E0D-977F-D1BAEEFBC1B3">Feedrates by Colour Map</string>
+				</label>
+				<tooltip>
+				  <string id="0ACFC35F-CB5D-4173-B681-231DAB0C429B">Feedrates by Colour Map</string>
+				</tooltip>
+			</property>
+			<property name="TpPoints" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+				<label>
+				  <string id="B04BFB47-E1F6-45E9-9699-6E37B783B17A">Show points</string>
+				</label>
+				<tooltip>
+				  <string id="C6434F8E-2C51-4484-B559-12CE95C4CA4A">Show points</string>
+				</tooltip>
+			</property>
+			<property name="TpVectors" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+				<label>
+				  <string id="2F5BA540-76E8-4649-ACE6-F092845822BB">Show vectors</string>
+				</label>
+				<tooltip>
+				  <string id="C0AD959E-BE8B-43E0-85B4-18D66FA23032">Show vectors</string>
+				</tooltip>
+			</property>
+			<property name="TpJobinfos" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+				<label>
+				  <string id="D1AC843E-878B-41A4-9E61-661E926EBCEC">Show job info</string>
+				</label>
+				<tooltip>
+				  <string id="81442412-2BBD-4217-9A00-99043C933033">Show job info</string>
+				</tooltip>
+			</property>	
+			<property name="TpDirections" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+				<label>
+				  <string id="EAFD80F7-7EED-4279-BC32-924FC72061D2">Show directions</string>
+				</label>
+				<tooltip>
+				  <string id="94394897-EDA1-4F41-88EF-5AED39910AFD">Show directions</string>
+				</tooltip>
+			</property>
+		</property-->
+    <property name="tpanalysismodel:ToolpathSettingsSize" type="Group">
+      <label>
+        <string id="AFA9C217-AF4B-4BB7-8B8E-4686AC0E3230">Size</string>
+      </label>
+      <property name="TpPointSize" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">
+        <label>
+          <string id="27902011-5E54-4C14-A1AD-74ABA6931691">Point size factor</string>
+        </label>
+        <tooltip>
+          <string id="550DBD81-38F3-4657-928E-446B7D3FFBBC">Point size factor</string>
+        </tooltip>
+        <minimum>0</minimum>
+        <maximum>10.0</maximum>
+        <step>0.25</step>
+        <decimals>2</decimals>
+      </property>
+      <property name="TpLineWidth" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">
+        <label>
+          <string id="582F5E01-0EC1-44F3-992D-6B5D513508BD">Line width factor</string>
+        </label>
+        <tooltip>
+          <string id="120EEE65-1920-4956-BD2A-93DA3574BA19">Line width factor</string>
+        </tooltip>
+        <minimum>0</minimum>
+        <maximum>10.0</maximum>
+        <step>0.25</step>
+        <decimals>2</decimals>
+      </property>
+      <property name="TpVectorLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">
+        <label>
+          <string id="36D79260-26DF-415B-B8A9-14A437E87EAD">Vector length factor</string>
+        </label>
+        <tooltip>
+          <string id="7F7FE07B-6113-4F9A-A60F-F02A15B6057B">Vector length factor</string>
+        </tooltip>
+        <minimum>0</minimum>
+        <maximum>100.0</maximum>
+        <step>0.5</step>
+        <decimals>1</decimals>
+      </property>
+    </property>
+    <property name="tpanalysismodel:ToolpathDataFilterSettings" type="Group">
+      <label>
+        <string id="404F44CC-7848-4486-8502-C9655BE1009C">Data Filter</string>
+      </label>
+      <property name="HideUpperLimitFeedrates" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+        <label>
+          <string id="EB7889F8-F5F8-41C2-8D8B-308ADD9AA6C5">Hide upper feedrates</string>
+        </label>
+        <tooltip>
+          <string id="A1AE0C77-4AD9-4196-91A1-C44588A89082">Hide upper feedrates</string>
+        </tooltip>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="HideLowerLimitFeedrates" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+        <label>
+          <string id="1D3A22DE-C9F9-4F71-880F-569EB15BCB25">Hide lower feedrates</string>
+        </label>
+        <tooltip>
+          <string id="42EBBE32-5227-4C5B-A4F6-2E6061D7C11F">Hide lower feedrates</string>
+        </tooltip>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="UseFeedratePartitionByCount" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+        <label>
+          <string id="AE7EDD10-33BF-45A3-92E1-78CB57E01C34">Feedrates separated by count</string>
+        </label>
+        <tooltip>
+          <string id="441BFC51-FE26-4B7A-B53B-FD3DC9611413">Feedrates separated by count</string>
+        </tooltip>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="ShowLayer25" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+        <label>
+          <string id="234D5E7D-B676-4F65-AAC8-852882E4B9E4">Show additional data</string>
+        </label>
+        <tooltip>
+          <string id="1C30D08C-0409-45F8-8435-FA34AE89336F">Show additional data from layer 25</string>
+        </tooltip>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="ShowNCPath" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+        <label>
+          <string id="C6CDC0AF-E69C-4E50-BAF5-9803CB64BE41">Show compensation toolpath</string>
+        </label>
+        <tooltip>
+          <string id="D02E20D0-2F14-482D-AA16-DDD96D563580">Show compensation toolpath</string>
+        </tooltip>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="ShowBallMillSpecPath" type="enumerator">
+        <label>
+          <string id="3E98B54D-AA89-4038-B96D-59F99756D203">Show tool reference</string>
+        </label>
+        <tooltip>
+          <string id="CA9019DC-DCC7-40E4-9EBE-66E5831290ED">Show tool referenced toolpaths</string>
+        </tooltip>
+        <enumlabels>
+          <label>
+            <string id="152160A8-ADF5-4854-9732-B2D82182544C">From job</string>
+          </label>
+          <label>
+            <string id="5152C40E-5E80-4213-B41C-0F78F59A7F76">Center only</string>
+          </label>
+          <label>
+            <string id="1D44C83F-E5B3-4ED3-B124-0083176B1B96">Tip only</string>
+          </label>
+          <label>
+            <string id="C6B7CA62-8F8C-49BA-B030-3C60F5EF818C">Both variants</string>
+          </label>
+        </enumlabels>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="ZLevelSelection" type="bool" uuid="e0d0d765-d5d5-5f08-a382-116014c67538">
+        <label>
+          <string id="6319195D-FBC6-4A6A-A79C-404421EBAB2D">Allow Z level selection</string>
+        </label>
+        <tooltip>
+          <string id="8DDDBF33-CE28-4EEE-AF5F-CEE9B4559114">Allow Z level selection</string>
+        </tooltip>
+        <hideinactive>1</hideinactive>
+      </property>
+      <property name="TpZLevelIndex" type="int">
+        <label>
+          <string id="E6E595CF-BBD5-4D8E-A1AC-AD7D65F27F55">Index of zlevel</string>
+        </label>
+        <tooltip>
+          <string id="F7B4E5BE-8862-4AE3-82FE-EFDFC97D33BF">Index of zlevel</string>
+        </tooltip>
+        <minimum>0</minimum>
+        <maximum>1000</maximum>
+        <step>1</step>
+        <decimals>1</decimals>
+      </property>
+    </property>
+  </property>
+  <property name="tpanalysismodel:TmpGraphicSettings" type="Group">
+    <label>
+      <string id="0EE3D586-DDFC-4C38-9B90-0298816CC88B">Temporary graphic</string>
+    </label>
+    <hideinactive>1</hideinactive>
+    <property name="TmpGrTolerance" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Length">
+      <label>
+        <string id="F7E2C1F4-7186-4B54-8576-1887FDABDB1A">Tessellation tolerance</string>
+      </label>
+      <tooltip>
+        <string id="EECE4EB1-8DA1-45A6-BA39-03D4E819F28F">Tessellation tolerance</string>
+      </tooltip>
+      <minimum>0.000001</minimum>
+      <maximum>1.0</maximum>
+      <step>0.000001</step>
+      <decimals>6</decimals>
+      <hideinactive>1</hideinactive>
+    </property>
+    <property name="TmpGrMinimumRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Length">
+      <label>
+        <string id="F6ADE684-0DE9-4A63-BA1B-FE90298D892E">Minimum radius</string>
+      </label>
+      <tooltip>
+        <string id="D04BC1A9-7187-4E2D-911A-424736C727CC">Minimum radius</string>
+      </tooltip>
+      <minimum>0.000001</minimum>
+      <maximum>1.0</maximum>
+      <step>0.000001</step>
+      <decimals>6</decimals>
+      <hideinactive>1</hideinactive>
+    </property>
+  </property>
+</PBagUI>

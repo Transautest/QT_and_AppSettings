@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" idbasedtr="true">
+ <class>COMMAND</class>
+ <widget class="QWidget" name="COMMAND">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>422</width>
+    <height>708</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>422</width>
+    <height>718</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string id="DF2DF8BB-4CBB-4A11-8835-F56705313A51">Form</string>
+  </property>
+  <widget class="QTabWidget" name="UI_Tab_General">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>411</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Tab_TPA">
+    <attribute name="title">
+     <string id="19880761-3070-4532-AF67-75BA08A7EC0F">Values</string>
+    </attribute>
+    <widget class="QGroupBox" name="UI_GB_TPA_Functions">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>397</width>
+       <height>75</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>397</width>
+       <height>75</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>397</width>
+       <height>75</height>
+      </size>
+     </property>
+     <property name="title">
+      <string id="A49D5B83-E48A-4060-9913-4106D25D9A91">Select</string>
+     </property>
+     <widget class="QScrollBar" name="UI_SpinBox_MoveNr">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>23</y>
+        <width>51</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string id="45D1E3FB-7E8C-479E-ADE0-93542EA9D06E">Move to next or to previous point on toolpath</string>
+      </property>
+      <property name="minimum">
+       <number>-10000000</number>
+      </property>
+      <property name="maximum">
+       <number>10000000</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Selector" name="UI_Btn_FirstEntities">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>72</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>72</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string id="798EC5D0-84B2-418F-9377-1437C1306B89">Point or movement on toolpath. The selected toolpath defines the NCS and Frame.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="whatsThis">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string id="7CDA7AC3-0632-4172-A439-4A3C4F589BAD">Info</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="fileName">
+       <string notr="true">selector/selector4.ui</string>
+      </property>
+      <property name="StatusHint" stdset="0">
+       <string/>
+      </property>
+      <property name="hc_noframe" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Selector" name="UI_Btn_SecondEntities">
+      <property name="geometry">
+       <rect>
+        <x>315</x>
+        <y>20</y>
+        <width>72</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>72</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string id="7C8751DA-90AD-41C3-BB21-100A13A8DDA5">CAD entity to measure the distance to the selected toolpath point / toolpath movement</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="whatsThis">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string id="3CEA42B9-3D79-4EA5-A22B-5D898043DDED">Measure</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="fileName">
+       <string notr="true">selector/selector4.ui</string>
+      </property>
+      <property name="StatusHint" stdset="0">
+       <string/>
+      </property>
+      <property name="hc_noframe" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="UI_Sel_RefCS">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>95</y>
+       <width>397</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>397</width>
+       <height>65</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>397</width>
+       <height>65</height>
+      </size>
+     </property>
+     <property name="title">
+      <string id="C5EB7253-50D1-48CC-8EA9-60EF60547077">Reference coordinate system</string>
+     </property>
+     <widget class="QPushButton" name="UI_RBtn_RefSystemType_0">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>66</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string id="0C2440E2-072F-4F66-9556-2554949E8A8A">NCS</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="hc_id" stdset="0">
+       <string notr="true">0</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UI_GBox_RefSystemType</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="UI_RBtn_RefSystemType_1">
+      <property name="geometry">
+       <rect>
+        <x>88</x>
+        <y>20</y>
+        <width>66</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string id="4219288B-711E-439E-9597-8CF9B45D89DE">Frame</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="hc_id" stdset="0">
+       <string notr="true">1</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UI_GBox_RefSystemType</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="UI_RBtn_RefSystemType_2">
+      <property name="geometry">
+       <rect>
+        <x>166</x>
+        <y>20</y>
+        <width>66</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string id="C8C2CFF6-C656-4C6B-8C71-A562E274BBA4">Work plane coordinate system</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="text">
+       <string id="C0555D86-9827-4F5B-88D3-03EAE4670325">Wp</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="hc_id" stdset="0">
+       <string notr="true">2</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UI_GBox_RefSystemType</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QComboBox" name="SearchString">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>165</y>
+       <width>180</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>180</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>180</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string id="4C5CD3D5-175C-4C43-8A34-D84C1E0975E3">Search text components\n(e.g.: MyText1 MyText2)\nor exact text\n(e.g.: &quot;MyExactText&quot;)</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="maxCount">
+      <number>100</number>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+     <property name="hc_searchname" stdset="0">
+      <string notr="true">properties</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="UI_Panel_AnalysisResult">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>190</y>
+       <width>397</width>
+       <height>319</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>397</width>
+       <height>319</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>397</width>
+       <height>319</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget
+{
+  background:qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 rgb(255, 255, 255),stop:1 rgb(204, 204, 204));
+  border-bottom:1px solid rgb(51, 51, 51);
+  border-right:1px solid rgb(51, 51, 51);
+  border-left:1px solid rgb(170, 170, 170);
+  border-top:1px solid rgb(170, 170, 170);
+  border-radius:3px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="CustomObjectType" stdset="0">
+      <string notr="true">PropertyGrid</string>
+     </property>
+     <property name="hc_propertygriddescriptionfolder" stdset="0">
+      <string>\.\</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Tab_FRA">
+    <attribute name="title">
+     <string id="FF78049C-61E8-4C00-A1AE-A371F6EA1020">Color map</string>
+    </attribute>
+    <widget class="QTableWidget" name="ColorSteps">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>170</y>
+       <width>397</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="rowCount">
+      <number>5</number>
+     </property>
+     <property name="columnCount">
+      <number>3</number>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+    <widget class="QGroupBox" name="UI_GBox_ColorLimits">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>397</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string id="E7024087-7A4A-4D80-BD47-A65B6D668506">Limit feedrate</string>
+     </property>
+     <widget class="QLineEdit" name="UI_ColorMapMax_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>275</x>
+        <y>50</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="6B0AC59C-9A72-4B4A-A4E8-124EBAC34C11">Max. value from all visible toolpaths.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+      <property name="decimals" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UI_ColorMapMin_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>275</x>
+        <y>20</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="F7F971C9-C2D8-4FB0-868B-17502797DAD5">Min. value from all visible toolpaths.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+      <property name="decimals" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UI_ColorMapCMax_3">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>275</x>
+        <y>80</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="B2784665-CB78-4B09-AD19-E427B77837A8">Detected clearance feedrate.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+      <property name="decimals" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UI_TargetValueMin">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>20</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="899C8D98-D75C-464B-A81A-EE38B3CB4E31">User defined min. value if enabled.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+      <property name="decimals" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UI_TargetValueMax">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>50</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="9FCC11B1-328B-4341-9F36-0CDDD1EE4855">User defined max. value if enabled.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="decimals" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UI_TargetLevels">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>110</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="C176AA2B-6435-46A3-9441-B88FA2923FBB"/>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="UI_CB_AutoUpdateMin">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string id="0A85347F-12C5-44A8-B663-7074D8E72065">Enable user defined min. value.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="text">
+       <string id="9E7AECFD-44A1-4214-8787-C64CF4A14C6D">Min.</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="UI_CB_AutoUpdateMax">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>50</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string id="5C591E73-A52A-42E1-8D7E-B2E78EFF79EC">Enable user defined max. value.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="text">
+       <string id="A3334ECF-5D2D-420F-B33C-7B9B810DDE07">Max.</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="UI_CB_ClearanceAsMax">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>80</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string id="0FFE1FF5-69FB-4830-B73B-DAF42694D525">Use clearance feedrate as max. value.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string id="3AE4D2C0-A041-47DB-9301-9130AFB19B93">Clearance Feedrate as Max.</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="UI_CB_AutoUpdateLevels">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>110</y>
+        <width>141</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string id="0AB42033-F325-4A4B-BD74-9B96AA9C18F0">Enables color map calculation based on min. / max. values. Otherwise, colors are assigned to used feedrates.</string>
+      </property>
+      <property name="text">
+       <string id="4FA30173-78AE-420E-B49B-CF4B27E604DA">Number of colors</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UI_TargetLevelsAuto">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>275</x>
+        <y>110</y>
+        <width>68</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string id="88D5F045-2230-47DE-BE0C-1F126740505C">Detected clearance feedrate.</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDigitsOnly</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Tab_Setting">
+    <attribute name="title">
+     <string id="041CBBC3-3F38-4659-BA0B-BE0562B3C21C">Configuration</string>
+    </attribute>
+    <widget class="QLabel" name="UI_Panel_Settings">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>20</y>
+       <width>397</width>
+       <height>485</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>397</width>
+       <height>485</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>397</width>
+       <height>485</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget
+{
+  background:qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 rgb(255, 255, 255),stop:1 rgb(204, 204, 204));
+  border-bottom:1px solid rgb(51, 51, 51);
+  border-right:1px solid rgb(51, 51, 51);
+  border-left:1px solid rgb(170, 170, 170);
+  border-top:1px solid rgb(170, 170, 170);
+  border-radius:3px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="CustomObjectType" stdset="0">
+      <string notr="true">PropertyGrid</string>
+     </property>
+     <property name="hc_propertygriddescriptionfolder" stdset="0">
+      <string>\.\</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="UI_GBox_CommonDisplay">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>402</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>402</width>
+     <height>86</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>402</width>
+     <height>86</height>
+    </size>
+   </property>
+   <property name="title">
+    <string id="38A39386-DBA0-4109-B99C-1A273564610C">Visibility</string>
+   </property>
+   <widget class="QCheckBox" name="UI_CB_Label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>132</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>132</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string id="63CA182F-C4A2-430F-955F-B744EA5819A3">Show additional info, e.g. the job name.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="text">
+     <string id="379BFBC4-42EC-4CE7-BBD8-B954781673DD">Jobinfo</string>
+    </property>
+   </widget>
+   <widget class="omsl::ThreeStateCheckBox" name="UI_CB_Vector">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>132</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>132</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string id="E6CB5D16-B7F4-4157-A7AB-148E6C235DBB">Show the tool vectors.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="text">
+     <string id="974D0804-7C0F-490F-BE6C-00BECA39E23A">Vectors</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="UI_CB_Direction">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>40</y>
+      <width>132</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>132</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string id="CD15231E-A51E-4411-B4E0-BF908EB66C01">Show the start and end direction,
+ and the direction at the selected entity.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="text">
+     <string id="BA20553F-28FF-4387-BDFB-D596940B2BB5">Directions</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="UI_CB_FeedRate">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>211</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>132</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string id="8B583E5C-35B7-47F6-A772-1EF938356104">The toolpath is colored depending on the settings in color map tab.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="text">
+     <string id="0E616A5D-6E5C-41F6-834F-03808E31E769">Feedrates by color map</string>
+    </property>
+   </widget>
+   <widget class="omsl::ThreeStateCheckBox" name="UI_CB_Point">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string id="CF8EB9FE-3792-46F6-B912-1E8D22EAC853">Show the points on toolpath.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="text">
+     <string id="5DB3C2CF-8C83-4B21-8F7C-85B90BCDA65C">Points</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="ToolPathLimits">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string id="A43C0598-EAE5-44BC-B79C-F44918DFA80B">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Slider and buttons for left / right selection only enabled with one visible job&lt;/p&gt;&lt;p&gt;Click on the line between the buttons to move the range.&lt;/p&gt;&lt;p&gt;Click in the middle of overlapped buttons to move the range.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="title">
+    <string id="0F3A399C-AABE-43D9-A2D3-929201A6146F">Limit toolpath</string>
+   </property>
+   <widget class="ctkRangeSlider" name="UI_DblSldr_Limits">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>301</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>10000</number>
+    </property>
+    <property name="sliderPosition">
+     <number>20</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Selector" name="UI_Btn_LeftPick">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string id="CFBE55B2-75D4-42A4-B684-67A8E0D55B30">Select start point</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="whatsThis">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="fileName">
+     <string notr="true">../commands/ToolpathAnalyser/selectorTPL.ui</string>
+    </property>
+    <property name="StatusHint" stdset="0">
+     <string/>
+    </property>
+    <property name="hc_noframe" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Selector" name="UI_Btn_RightPick">
+    <property name="geometry">
+     <rect>
+      <x>361</x>
+      <y>15</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string id="5CCDD046-741B-49A0-9597-EFA950F4DD65">Select endpoint.</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="whatsThis">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="fileName">
+     <string notr="true">../commands/ToolpathAnalyser/selectorTPR.ui</string>
+    </property>
+    <property name="StatusHint" stdset="0">
+     <string/>
+    </property>
+    <property name="hc_noframe" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>omsl::ThreeStateCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>threestatecheckbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Selector</class>
+   <extends>QWidget</extends>
+   <header>intool.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ctkRangeSlider</class>
+   <extends>QSlider</extends>
+   <header>ctkrangeslider.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>UI_Btn_FirstEntities</tabstop>
+  <tabstop>UI_RBtn_RefSystemType_0</tabstop>
+  <tabstop>UI_RBtn_RefSystemType_1</tabstop>
+  <tabstop>UI_RBtn_RefSystemType_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="UI_GBox_RefSystemType"/>
+ </buttongroups>
+</ui>

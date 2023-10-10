@@ -1,0 +1,471 @@
+<PBag name="tp_analyzer.TPAnalysis">
+  <property name="PreviewConfiguration" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+    <PBag name="PreviewConfiguration">
+      <property name="Observers" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+        <PBag name="Observers">
+          <property name="TGr_ReferenceSystem" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_ReferenceSystem</property>
+              <property name="Configurations" type="PropertyBag">
+                <property name="ReferenceSystem" type="PropertyBag">
+                  <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.5491 0.6843</property>
+                  <property name="DiffuseColor" type="float" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">1 0 0</property>
+                  <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.5</property>
+                  <property name="SpecularColor" type="float" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">1 1 0</property>
+                  <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.5</property>
+                  <property name="Size" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">10</property>
+                  <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">20</property>
+                </property>
+              </property>
+            </PBag>
+          </property>
+          <!--property name="TGr_ReferenceArrowS" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="TGr_ReferenceArrowS" version="1">
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Arrow" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Arrow" version="1">
+                      <property name="Material" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                        <PBag name="Material" version="1">
+                          <property name="DiffuseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 0 0</property>
+                          <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.5</property>
+                          <property name="SpecularColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                          <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.5</property>
+                        </PBag>
+                      </property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">0</property>
+                    </PBag>
+                  </property>
+                  <property name="Axis3d" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Axis3d" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0.1 0.5491 0.5</property>
+                      <property name="DiffuseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0 1 1</property>
+                      <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">5</property>
+                      <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+                      <property name="Size" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">10</property>
+                      <property name="SpecularColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0 1 1</property>
+                      <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.5</property>
+                      <property name="ZoomInvariant" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+              <property name="CustomizedSize" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+              <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">20</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" dimension="Dimensionless">Axis3d</property>
+              <property name="ReverseOrientation" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+              <property name="ConeLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.75</property>
+              <property name="ConeRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+              <property name="StemLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.0</property>
+              <property name="StemRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" dimension="Dimensionless">TGr_ReferenceArrowS</property>
+              <property name="ZoomInvariant" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+            </PBag>
+          </property-->
+          <!--property name="TGr_ReferenceArrowE" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="TGr_ReferenceArrowE" version="1">
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Arrow" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Arrow" version="1">
+                      <property name="Material" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                        <PBag name="Material" version="1">
+                          <property name="DiffuseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0 1 1</property>
+                          <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.5</property>
+                          <property name="SpecularColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                          <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.5</property>
+                        </PBag>
+                      </property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">0</property>
+                    </PBag>
+                  </property>
+                  <property name="Axis3d" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Axis3d" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0.1 0.5491 0.5</property>
+                      <property name="DiffuseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                      <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">5</property>
+                      <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+                      <property name="Size" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">10</property>
+                      <property name="SpecularColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                      <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.75</property>
+                      <property name="ZoomInvariant" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+              <property name="CustomizedSize" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+              <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">20</property>
+              <property name="ConeLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.75</property>
+              <property name="ConeRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+              <property name="StemLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.0</property>
+              <property name="StemRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" dimension="Dimensionless">Axis3d</property>
+              <property name="ReverseOrientation" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">0</property>
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" dimension="Dimensionless">TGr_ReferenceArrowE</property>
+              <property name="ZoomInvariant" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+            </PBag>
+          </property-->
+          <property name="TGr_ReferenceArrowC" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="TGr_ReferenceArrowC" version="1">
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Arrow" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Arrow" version="1">
+                      <property name="Material" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                        <PBag name="Material" version="1">
+                          <property name="DiffuseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0 1 0</property>
+                          <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.5</property>
+                          <property name="SpecularColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                          <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+                        </PBag>
+                      </property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">0</property>
+                    </PBag>
+                  </property>
+                  <property name="Axis3d" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Axis3d" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0.1 0.5491 0.5</property>
+                      <property name="DiffuseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                      <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">5</property>
+                      <property name="Shininess" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+                      <property name="Size" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">10</property>
+                      <property name="SpecularColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 1</property>
+                      <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+                      <property name="ZoomInvariant" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+              <property name="CustomizedSize" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+              <property name="Length" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">100</property>
+              <property name="ConeLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+              <property name="ConeRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.05</property>
+              <property name="StemLength" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.75</property>
+              <property name="StemRadius" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.025</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" dimension="Dimensionless">Axis3d</property>
+              <property name="ReverseOrientation" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" dimension="Dimensionless">TGr_ReferenceArrowC</property>
+              <property name="ZoomInvariant" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+            </PBag>
+          </property>
+          <property name="Directions" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_DirectionVectors</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0 0 1</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">0</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">4</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="Compensations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_CompensationVectors</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 0 0</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">0</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">4</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">0</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="OrientationsR" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_OrientationVectorsR</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0 0.75 0</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">2</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">1</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                      <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <!--property name="MeshesList" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_MeshesList</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 0 0</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">0</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">4</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property-->
+          <property name="OrientationsL" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_OrientationVectorsL</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">0.75 0 0</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">2</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">1</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                      <property name="Transparency" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9" dimension="Dimensionless">0.25</property>
+ 				    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="Labels" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_LabelVectors</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 1 0</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">0</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">1</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">1</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="Texts" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_Texts</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >AlwaysOnTopText2d</property>
+              <property name="Positions" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_TextPoints</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="AnnotationText" type="PropertyBag">
+                    <PBag name="AnnotationText">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.2491 0.6843</property>
+                    </PBag>
+                  </property>
+                  <property name="TextProperties" type="PropertyBag">
+                    <PBag name="TextProperties">
+                      <property name="Justification" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                      <property name="Height" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">10</property>
+                      <property name="Font" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Arial Unicode MS</property>
+                      <property name="Rotation" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.</property>
+                      <property name="Slant" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.</property>
+                      <property name="Bold" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                      <property name="Italic" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Underline" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Strikeout" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Overline" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Backward" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="UpsideDown" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Vertical" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="PreviewPoints_Ent2" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_PreviewPoints_Ent2</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >PointCloud</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="PointCloud" type="PropertyBag">
+                    <PBag name="PointCloud">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.5491 0.6843</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="PointSize" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b">8</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="PreviewPointsR3rd" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_PreviewPoints_R3rd</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >PointCloud</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="PointCloud" type="PropertyBag">
+                    <PBag name="PointCloud">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">1.0 0.7 0.7</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="PointSize" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b">10</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="PreviewPointsC" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_PreviewPoints_C</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >PointCloud</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="PointCloud" type="PropertyBag">
+                    <PBag name="PointCloud">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.5491 0.9 0.6843</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="PointSize" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b">10</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="MovementArcMarkers" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >TGr_MovementArcMarkers</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c" dimension="Dimensionless">1 0 0</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034" dimension="Dimensionless">0</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b" dimension="Dimensionless">3</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9" dimension="Dimensionless">0</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="DistPointTexts" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Msr_DistPointsTexts</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >AlwaysOnTopText2d</property>
+              <property name="Positions" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Msr_TextPoints</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="AnnotationText" type="PropertyBag">
+                    <PBag name="AnnotationText">
+                      <!--<property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0. 0. 1.</property>-->
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.2491 0.6843</property>
+                    </PBag>
+                  </property>
+                  <property name="TextProperties" type="PropertyBag">
+                  <PBag name="TextProperties">
+                    <property name="Justification" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                    <property name="Height" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">24</property>
+                    <property name="Font" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Arial</property>
+                    <property name="Rotation" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.</property>
+                    <property name="Slant" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.</property>
+                    <property name="Bold" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                    <property name="Italic" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    <property name="Underline" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    <property name="Strikeout" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    <property name="Overline" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    <property name="Backward" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    <property name="UpsideDown" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    <property name="Vertical" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                  </PBag>
+                </property>
+              </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="DistanceText" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Msr_DistanceTexts</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >AlwaysOnTopText2d</property>
+              <property name="Positions" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Msr_DistanceTextPoints</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="AnnotationText" type="PropertyBag">
+                    <PBag name="AnnotationText">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.2491 0.6843</property>
+                      <!--<property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">1.0 0. 0.</property>-->
+                    </PBag>
+                  </property>
+                  <property name="TextProperties" type="PropertyBag">
+                    <PBag name="TextProperties">
+                      <property name="Justification" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                      <property name="Height" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">16</property>
+                      <property name="Font" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Arial</property>
+                      <property name="Rotation" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.</property>
+                      <property name="Slant" type="double" uuid="d46df12d-5e3b-53c1-bb37-6d6b1e3223f9">0.</property>
+                      <property name="Bold" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Italic" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Underline" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Strikeout" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Overline" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Backward" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="UpsideDown" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="Vertical" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="DistancePoints" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Msr_DistPoints</property>
+              <property name="ObserverType" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >PointCloud</property>
+              <property name="Configurations" type="PropertyBag">
+                <PBag name="Configurations">
+                  <property name="PointCloud" type="PropertyBag">
+                    <PBag name="PointCloud">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.2491 0.6843</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                      <property name="PointSize" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b">10</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+          <property name="DistanceLine" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+            <PBag name="Observer">
+              <property name="ValueKey" type="omslWString" uuid="e446855a-7c67-5d58-b254-f543f080dce4" >Msr_DistanceLine</property>
+              <property name="Configurations" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                <PBag name="Configurations" version="1">
+                  <property name="Curves" type="PropertyBag" uuid="58ba6e06-7345-5342-a40a-1c18c5664975">
+                    <PBag name="Curves" version="1">
+                      <property name="BaseColor" type="Rgb" uuid="cd85cecd-e385-5d54-9c99-1529affd663c">0.9 0.2491 0.6843</property>
+                      <property name="OnFront" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">1</property>
+                      <property name="LineStyle" type="integer" uuid="d89b196b-81a1-59cd-b27e-6ab2f92fd034">2</property>
+                      <property name="LineWidth" type="float" uuid="1760b5e8-45ae-5a27-9717-f90f5311a92b">4</property>
+                      <property name="Pickability" type="omslLong" uuid="40dff002-f0e9-59f9-b8a8-04776d96aea9">0</property>
+                    </PBag>
+                  </property>
+                </PBag>
+              </property>
+            </PBag>
+          </property>
+        </PBag>
+      </property>
+    </PBag>
+  </property>
+  <property name="DefaultValues" type="PropertyBag">
+    <property name="Modality" type="PropertyBag"> <!-- Default all enabled -->
+      <!--property name="UI_CB_Vector">1</property--> <!-- 0=disabled 1=enabled(default) -->
+    </property> <!-- Modality -->
+  </property> <!-- DefaultValues -->
+</PBag>

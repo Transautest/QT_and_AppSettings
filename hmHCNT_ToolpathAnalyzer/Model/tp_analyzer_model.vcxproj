@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugU|x64">
+      <Configuration>DebugU</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseU|x64">
+      <Configuration>ReleaseU</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Commands\common_functions.h" />
+    <ClInclude Include="commandhandshake.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tpanalysismodel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Commands\common_functions.cpp" />
+    <ClCompile Include="..\Commands\tp_listeningclass.cpp" />
+    <ClCompile Include="..\Commands\tp_signalemitter.cpp" />
+    <ClCompile Include="Computation.cpp" />
+    <ClCompile Include="DataAnalyser.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="GeoCalculations.cpp" />
+    <ClCompile Include="Interaction.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tpanalysismodel.cpp" />
+    <ClCompile Include="tp_commonSettings.cpp" />
+    <ClCompile Include="ViewData.cpp" />
+    <ClCompile Include="ViewGraphicData.cpp" />
+    <ClCompile Include="ViewMeasureData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="versionnumber.txt"/>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D5193E99-D7DB-4879-B9EA-92923D1B699E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tp_analyzer</RootNamespace>
+    <ProjectName>tp_analyzermodel</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="tp_analyzer_model.macros.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.cpp.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.cpp.rdebug.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.build_with_multiple_processes.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.boost.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.wtl.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.libs.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.qt.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.qwt.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.ctk.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hm.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsGen.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsDbg.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hcs_trunk.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hm.hcsapi_trunk.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hm.hcntlib_trunk.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsHCNT.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsHM.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsHMHCNT.props" />
+    <Import Project="..\..\PropertySheets\om.hm.hcNT.hmHCNTcmds.props" />
+    <Import Project="..\Commands\tp_analyzer.macros_other.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="tp_analyzer_model.macros.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.cpp.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.cpp.release.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.build_with_multiple_processes.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.boost.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.wtl.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.libs.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.qt.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.qwt.props" />
+    <Import Project="..\..\..\..\..\PropertySheets\vc142\om.ctk.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hm.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsGen.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsRel.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hcs_trunk.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hm.hcsapi_trunk.props" />
+    <Import Project="..\..\..\..\PropertySheets\om.hm.hcntlib_trunk.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsHCNT.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsHM.props" />
+    <Import Project="..\..\..\PropertySheets\SettingsHMHCNT.props" />
+    <Import Project="..\..\PropertySheets\om.hm.hcNT.hmHCNTcmds.props" />
+    <Import Project="..\Commands\tp_analyzer.macros_other.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(HCNTINSTPATH)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <PreBuildEventUseInBuild/>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <CustomBuildAfterTargets>PostBuildEvent</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(HCNTINSTPATH)</OutDir>
+    <PreBuildEventUseInBuild/>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">
+    <ClCompile>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OM_ROOT_FOLDER)/hyperMILL/hcNT;%(AdditionalIncludeDirectories);$(QTDIR)\include;$(QTDIR)\include\QtCore</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;TP_ANALYZER_MODEL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(HC_LIBS);$(HC_LIBS)\boost;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Message/>
+      <Command/>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>"$(HC_ROOT)\hcroot\buildtools\updateversion" "$(HC_INCLUDES)" buildnumber.h "rc /D \"_UNICODE\" /D \"UNICODE\" /D \"BUILDNUMBER\" /D \"BUILDNUMBERS\" /D \"COMPUTER_NAME=\"\"$(COMPUTERNAME)\"\"\" /l 0x0409 /nologo /I\"$(HC_INCLUDES)\" /D \"ORIGINALNAME=\"\"$(TargetFileName)\"\"\" /D \"CONFIGNAME=\"\"$(ConfigurationName)\"\"\" /fo\"$(IntDir)\version.res\"  version.rc</Command>
+      <Message>updating build number</Message>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OM_THIRD_PARTY)/hcNT_api/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader />
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(OM_ROOT_FOLDER)/hyperMILL/hcNT;%(AdditionalIncludeDirectories);$(QTDIR)\include;$(QTDIR)\include\QtCore</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;TP_ANALYZER_MODEL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(HC_LIBS);$(HC_LIBS)\boost;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Message/>
+      <Command/>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>"$(HC_ROOT)\hcroot\buildtools\updateversion" "$(HC_INCLUDES)" buildnumber.h "rc /D \"_UNICODE\" /D \"UNICODE\" /D \"BUILDNUMBER\" /D \"BUILDNUMBERS\" /D \"COMPUTER_NAME=\"\"$(COMPUTERNAME)\"\"\" /l 0x0409 /nologo /I\"$(HC_INCLUDES)\" /D \"ORIGINALNAME=\"\"$(TargetFileName)\"\"\" /D \"CONFIGNAME=\"\"$(ConfigurationName)\"\"\" /fo\"$(IntDir)\version.res\"  version.rc</Command>
+      <Message>updating build number</Message>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OM_THIRD_PARTY)/hcNT_api/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;TP_ANALYZER_MODEL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;TP_ANALYZER_MODEL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

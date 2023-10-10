@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keys include", "Keys include", "{C3B8C003-71E5-4386-9419-7AAE9CF6FA8C}"
+	ProjectSection(SolutionItems) = preProject
+		Commands\wpanalysiskeys.h = Commands\wpanalysiskeys.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{6AF2E6CB-0EDB-4405-9949-6B200D74314C}"
+	ProjectSection(SolutionItems) = preProject
+		env\hCS\files\ui\wp.analysis.description.xml = env\hCS\files\ui\wp.analysis.description.xml
+		env\hCS\files\ui\wp_analysis.commandconfig.xml = env\hCS\files\ui\wp_analysis.commandconfig.xml
+		env\hCS\files\ui\wp_analysis.ui = env\hCS\files\ui\wp_analysis.ui
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tp_analyzer_cmd", "commands\tp_analyzer_cmd.vcxproj", "{2812DD5B-AF24-4869-AC21-6DFD5B48B10D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5193E99-D7DB-4879-B9EA-92923D1B699E} = {D5193E99-D7DB-4879-B9EA-92923D1B699E}
+		{61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE} = {61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tp_analyzer_model", "model\tp_analyzer_model.vcxproj", "{D5193E99-D7DB-4879-B9EA-92923D1B699E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tp_analyzer_gui", "gui\tp_analyzer_gui.vcxproj", "{61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugU|x64 = DebugU|x64
+		ReleaseU|x64 = ReleaseU|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2812DD5B-AF24-4869-AC21-6DFD5B48B10D}.DebugU|x64.ActiveCfg = DebugU|x64
+		{2812DD5B-AF24-4869-AC21-6DFD5B48B10D}.DebugU|x64.Build.0 = DebugU|x64
+		{2812DD5B-AF24-4869-AC21-6DFD5B48B10D}.ReleaseU|x64.ActiveCfg = ReleaseU|x64
+		{2812DD5B-AF24-4869-AC21-6DFD5B48B10D}.ReleaseU|x64.Build.0 = ReleaseU|x64
+		{D5193E99-D7DB-4879-B9EA-92923D1B699E}.DebugU|x64.ActiveCfg = DebugU|x64
+		{D5193E99-D7DB-4879-B9EA-92923D1B699E}.DebugU|x64.Build.0 = DebugU|x64
+		{D5193E99-D7DB-4879-B9EA-92923D1B699E}.ReleaseU|x64.ActiveCfg = ReleaseU|x64
+		{D5193E99-D7DB-4879-B9EA-92923D1B699E}.ReleaseU|x64.Build.0 = ReleaseU|x64
+		{61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE}.DebugU|x64.ActiveCfg = DebugU|x64
+		{61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE}.DebugU|x64.Build.0 = DebugU|x64
+		{61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE}.ReleaseU|x64.ActiveCfg = ReleaseU|x64
+		{61CCBAE9-A51F-4AB5-B72B-70C94E17ACEE}.ReleaseU|x64.Build.0 = ReleaseU|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Configuration>
+	<Menu Name="Tools" Bundle="Base,Camob,CADViewer,VMCenter,VMCreator,VMCad,ToolBuilder" Before="Help" />
+	<Commands Bundle="Base,Camob,CADViewer,VMCreator,VMCad" FormatVersion="1">
+    </Commands>
+</Configuration>
+								

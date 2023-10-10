@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <HCNTINSTPATH>$(OM_HM_OUT)/hcnt/out/bin/commands/ToolpathAnalyser/</HCNTINSTPATH>
+  </PropertyGroup>
+  <PropertyGroup/>
+  <ItemDefinitionGroup/>
+  <ItemGroup>
+    <BuildMacro Include="HCNTINSTPATH">
+      <Value>$(HCNTINSTPATH)</Value>	  
+    </BuildMacro>
+  </ItemGroup>
+</Project>
