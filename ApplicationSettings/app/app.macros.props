@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <OM_ROOT_FOLDER>..\..\..</OM_ROOT_FOLDER>
+  </PropertyGroup>
+  <PropertyGroup/>
+  <ItemDefinitionGroup/>
+  <ItemGroup>
+    <BuildMacro Include="OM_ROOT_FOLDER">
+      <Value>$(OM_ROOT_FOLDER)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

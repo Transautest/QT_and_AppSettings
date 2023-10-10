@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugU|x64">
+      <Configuration>DebugU</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseU|x64">
+      <Configuration>ReleaseU</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0D94E9F5-38CC-4E23-872F-D48F39ADDAF5}</ProjectGuid>
+    <RootNamespace>app</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="app.macros.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.high_dpi_aware.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.tools.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.release.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.build_with_multiple_processes.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.boost.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.wtl.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cximage.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.zlib.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.libs.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.libs.pro2006.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="app.macros.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.high_dpi_aware.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.tools.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.debug.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.build_with_multiple_processes.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.boost.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.wtl.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cximage.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.zlib.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.libs.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.libs.pro2006.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">
+    <OutDir>..\output\$(Configuration)\</OutDir>
+    <IntDir>..\build\x64\vc142\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>omAppSettingsX64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">
+    <OutDir>..\output\$(Configuration)\</OutDir>
+    <IntDir>..\build\x64\vc142\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>omAppSettingsX64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">
+    <PreBuildEvent>
+      <Message>Creating version resource</Message>
+      <Command>"$(OM_TOOLS_FOLDER)\omCreateVerInfo" versionInfo.xml res\omAstVersion.rc -c "$(PlatformToolsetVersion)" -f $(TargetFileName)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)app.tlb</TypeLibraryName>
+      <HeaderFileName>app.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>app_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>app_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+          </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>asinvoker.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">
+    <PreBuildEvent>
+      <Message>Creating version resource</Message>
+      <Command>"$(OM_TOOLS_FOLDER)\omCreateVerInfo" versionInfo.xml res\omAstVersion.rc -c "$(PlatformToolsetVersion)" -f $(TargetFileName)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)app.tlb</TypeLibraryName>
+      <HeaderFileName>app.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>app_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>app_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>asinvoker.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="app.cpp" />
+    <ClCompile Include="omAstApp.cpp" />
+    <ClCompile Include="omAstApplicationSettings.cpp" />
+    <ClCompile Include="omAstEditApplicationDlg.cpp" />
+    <ClCompile Include="omAstLanguageSettings.cpp" />
+    <ClCompile Include="omAstMainDlg.cpp" />
+    <ClCompile Include="omAstMessageLogObserver.cpp" />
+    <ClCompile Include="omAstRegisteredApplication.cpp" />
+    <ClCompile Include="omAstResizable.cpp" />
+    <ClCompile Include="omAstUtils.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="asinvoker.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="omAstApp.h" />
+    <ClInclude Include="omAstApplicationSettings.h" />
+    <ClInclude Include="omAstDefines.h" />
+    <ClInclude Include="omAstEditApplicationDlg.h" />
+    <ClInclude Include="omAstLanguageSettings.h" />
+    <ClInclude Include="omAstMainDlg.h" />
+    <ClInclude Include="omAstMessageLogObserver.h" />
+    <ClInclude Include="omAstRegisteredApplication.h" />
+    <ClInclude Include="omAstResizable.h" />
+    <ClInclude Include="omAstUtils.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="versionInfo.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="res\app.ico" />
+    <None Include="app.rc2" />
+    <CustomBuild Include="omRMkeys.TXT">
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">Copying %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">copy "%(FullPath)" "$(OutDir)%(Filename)%(Extension)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">$(OutDir)%(Filename)%(Extension);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">Copying %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">copy "%(FullPath)" "$(OutDir)%(Filename)%(Extension)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">$(OutDir)%(Filename)%(Extension);%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+    <ResourceCompile Include="res\omAstVersion.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseU|x64'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

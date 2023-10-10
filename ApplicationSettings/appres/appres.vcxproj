@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugU|Win32">
+      <Configuration>DebugU</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseU|Win32">
+      <Configuration>ReleaseU</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{7D17A849-915C-44B5-A65C-9320A8ED055F}</ProjectGuid>
+    <RootNamespace>appres</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="appres.macros.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.tools.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.release.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.build_with_multiple_processes.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.libs.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="appres.macros.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.tools.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.cpp.debug.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.build_with_multiple_processes.props" />
+    <Import Project="..\..\..\PropertySheets\vc142\om.libs.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|Win32'">
+    <OutDir>..\output\$(Configuration)\english\</OutDir>
+    <IntDir>..\build\Win32\vc142\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>omAppSettings</TargetName>
+    <TargetExt>.loc</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|Win32'">
+    <OutDir>..\output\$(Configuration)\english\</OutDir>
+    <IntDir>..\build\Win32\vc142\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>omAppSettings</TargetName>
+    <TargetExt>.loc</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugU|Win32'">
+    <PreBuildEvent>
+      <Message>Creating version resource</Message>
+      <Command>"$(OM_TOOLS_FOLDER)\omCreateVerInfo" versionInfo.xml omAppSettingsVersion.rc -c "$(PlatformToolsetVersion)" -f $(TargetFileName)</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;APPRES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+    </ClCompile>
+    <ResourceCompile/>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseU|Win32'">
+    <PreBuildEvent>
+      <Message>Creating version resource</Message>
+      <Command>"$(OM_TOOLS_FOLDER)\omCreateVerInfo" versionInfo.xml omAppSettingsVersion.rc -c "$(PlatformToolsetVersion)" -f $(TargetFileName)</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;APPRES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+    </ClCompile>
+    <ResourceCompile/>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="omAppSettingsRes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="omAppSettingsRes.rc" />
+    <ResourceCompile Include="omAppSettingsVersion.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugU|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseU|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="omAppSettingsRes.rc2" />
+    <None Include="versionInfo.xml" />
+    <None Include="app.ico" />
+    <None Include="browse_exe.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

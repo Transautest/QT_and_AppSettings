@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VersionInfo version="1">
+   <Version firstRelease="2013" file="..\..\..\version.h">
+      <Dependencies>
+        <Dependency>.</Dependency>
+        <Dependency>..\..\..\Libs\om\include\ui\atl\res</Dependency>
+        <Dependency>..\..\..\Libs\om\include\ui\atl\omUiAtlGrid.rc</Dependency>
+      </Dependencies>
+   </Version>
+   <FileInfo type="string">
+      <Value name="FileDescription" value="OPEN MIND Application Settings Resource DLL"/>
+      <Value name="ProductName" value="OPEN MIND Application Settings"/>
+   </FileInfo>
+</VersionInfo>

@@ -1,0 +1,63 @@
+
+;**********************************************************************
+;
+; (c) OPEN MIND Technologies AG, 1999-2018
+; 
+;**********************************************************************
+
+; --- OPEN MIND Applications ------------------------
+
+   About OPEN MIND
+   Licence Manager
+
+   VMCenter
+   SimulationCenter
+   Generalized Postprocessor
+   Postprocessor
+   Postprocessor Light
+
+   NC Editor
+
+   Toolpath Editor
+   Night Shift
+   Tool Database
+   Tool Builder
+   Verification
+   Verification Light
+
+   Virtual Machine
+
+   OMX Viewer
+   POF Viewer
+   OMA Analyser
+   PCF Editor
+
+   ReportViewer_txt
+   ReportViewer_rtf
+   ReportViewer_htm
+   ReportViewer_xml
+   ReportViewer_xlsx
+   ReportViewer_pdf
+
+; --- partner applications --------------------------
+
+   VERICUT
+   NCSimul
+   NCSimul Solutions
+
+; --- standard applications and shortcuts -----------
+
+   Text Editor
+   User Notes Editor
+   HTML Viewer
+
+   Send Mail
+   Web Browser
+   File Explorer
+
+; --- free functions --------------------------------
+
+   Free Function 1
+
+;**********************************************************************
+
