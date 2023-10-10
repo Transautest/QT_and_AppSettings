@@ -1,0 +1,9 @@
+<ContextMenu>
+	<Group Name="General" Bundle="Base,Camob"/>
+	<Group Name="Toolpath1" Bundle="Base,Camob"/>
+	<Group Name="Toolpath_analyse" Bundle="Base,Camob"/>
+	<Group Name="Toolpath_display" Bundle="Base,Camob"/>
+	<Group Name="Toolpath" Bundle="Base,Camob"/>
+<Context Name="GraphicArea">
+	</Context>
+</ContextMenu>

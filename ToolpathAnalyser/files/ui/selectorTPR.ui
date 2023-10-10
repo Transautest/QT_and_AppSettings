@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" idbasedtr="true">
+ <class>Selector</class>
+ <widget class="Selector" name="Selector">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>30</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="whatsThis">
+   <string notr="true"/>
+  </property>
+  <property name="icon">
+   <iconset>
+    <normaloff>../../images/clipping_flip.png</normaloff>../../images/clipping_flip.png</iconset>
+  </property>
+  <property name="text">
+   <string/>
+  </property>
+  <property name="title">
+   <string/>
+  </property>
+  <property name="label">
+   <string id="1FF981CA-E65A-4E12-9BB3-90EDAEB7B6D0">Count</string>
+  </property>
+  <property name="fileName">
+   <string notr="true">selector/selector1.ui</string>
+  </property>
+  <property name="StatusHint" stdset="0">
+   <string/>
+  </property>
+  <widget class="QPushButton" name="BUTTON">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Images/ToolpathAnalyser/select_end.svg</normaloff>../../Images/ToolpathAnalyser/select_end.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Selector</class>
+   <extends>QWidget</extends>
+   <header>intool.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>BUTTON</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
