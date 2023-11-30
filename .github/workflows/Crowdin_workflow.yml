@@ -1,17 +1,28 @@
-name: Crowdin Download
-
+name: Crowdin Upload and Download
 on:
-  workflow_run:
-    workflows: ["Crowdin Upload"]	
-    types:
-    - completed
-
-permissions:
-  pull-requests: write
-  contents: write
-
+  push:
+    paths: ['loc/**']
+    branches: [ main ]
 jobs:
-  crowdin:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Crowdin push
+        uses: crowdin/github-action@v1
+        with:
+          upload_sources: true
+          upload_translations: true
+          download_translations: false
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_API_PERSONAL_TOKEN: ${{ secrets.CROWDIN_API_PERSONAL_TOKEN }}
+  download:
+    needs: upload
+    permissions:
+      pull-requests: write
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
