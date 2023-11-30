@@ -1,0 +1,21 @@
+"project_id_env": "CROWDIN_PROJECT_ID"
+"api_token_env": "CROWDIN_API_PERSONAL_TOKEN"
+"base_path": "."
+"base_url": "https://openmindtech.api.crowdin.com"
+
+"preserve_hierarchy": true
+
+files: [
+  {
+    "source": "ApplicationSettings\appres\omAppSettingsRes.h",
+    "translation": "ApplicationSettings\appres\%two_letters_code%_omAppSettingsRes.h"
+  },
+  {
+    "source": "ApplicationSettings\appres\omAppSettingsRes.rc",
+    "translation": "ApplicationSettings\appres\%two_letters_code%_omAppSettingsRes.rc"
+  },
+  {
+    "source": "ApplicationSettings\appres\omAppSettingsRes.rc2",
+    "translation": "ApplicationSettings\appres\%two_letters_code%_omAppSettingsRes.rc2"
+  }
+]
