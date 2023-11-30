@@ -1,7 +1,7 @@
 name: Crowdin Upload
 on:
   push:
-    paths: ['ApplicationSettings\appres\omAppSettingsRes.**']
+    paths: ['ApplicationSettings/appres/omAppSettingsRes.**']
     branches: [ main ]
 jobs:
   crowdin:
