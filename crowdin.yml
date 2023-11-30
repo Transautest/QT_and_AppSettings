@@ -7,7 +7,7 @@
 
 files: [
   {
-    "source": "ApplicationSettings\appres\omAppSettingsRes.h",
-    "translation": "ApplicationSettings\appres\%two_letters_code%_omAppSettingsRes.h"
+    "source": "ApplicationSettings/appres/omAppSettingsRes.h",
+    "translation": "ApplicationSettings/appres/%two_letters_code%_omAppSettingsRes.h"
   }
 ]
