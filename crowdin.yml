@@ -11,11 +11,11 @@ files: [
     "translation": "ApplicationSettings/appres/%two_letters_code%_omAppSettingsRes.h"
   },
   {
-    "source": "ApplicationSettings\appres\omAppSettingsRes.rc",
-    "translation": "ApplicationSettings\appres\%two_letters_code%_omAppSettingsRes.rc"
+    "source": "ApplicationSettings/appres/omAppSettingsRes.rc",
+    "translation": "ApplicationSettings/appres/%two_letters_code%_omAppSettingsRes.rc"
   },
   {
-    "source": "ApplicationSettings\appres\omAppSettingsRes.rc2",
-    "translation": "ApplicationSettings\appres\%two_letters_code%_omAppSettingsRes.rc2"
+    "source": "ApplicationSettings/appres/omAppSettingsRes.rc2",
+    "translation": "ApplicationSettings/appres/%two_letters_code%_omAppSettingsRes.rc2"
   }
 ]
