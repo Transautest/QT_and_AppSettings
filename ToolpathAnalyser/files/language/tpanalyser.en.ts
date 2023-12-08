@@ -1740,7 +1740,7 @@ or exact text
     <message id="A43C0598-EAE5-44BC-B79C-F44918DFA80B">
       <location line="+14"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;bosssb and buttons for left / right selection only enabled with one visible job&lt;/p&gt;&lt;p&gt;Click on the line between the buttons to move the range.&lt;/p&gt;&lt;p&gt;Click in the middle of overlapped buttons to move the range.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;bossssb and buttons for left / right selection only enabled with one visible job&lt;/p&gt;&lt;p&gt;Click on the line between the buttons to move the range.&lt;/p&gt;&lt;p&gt;Click in the middle of overlapped buttons to move the range.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;bosssssb and buttons for left / right selection only enabled with one visible job&lt;/p&gt;&lt;p&gt;Click on the line between the buttons to move the range.&lt;/p&gt;&lt;p&gt;Click in the middle of overlapped buttons to move the range.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message id="0F3A399C-AABE-43D9-A2D3-929201A6146F">
       <location line="+3"/>
