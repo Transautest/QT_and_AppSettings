@@ -17,5 +17,9 @@ files: [
   {
     "source": "ApplicationSettings/appres/omAppSettingsRes.rc2",
     "translation": "ApplicationSettings/appres/%two_letters_code%_omAppSettingsRes.rc2"
+  },
+  {
+    "source": "/ToolpathAnalyser/files/language/tpanalyser.en.ts",
+    "translation": ""/ToolpathAnalyser/files/language/%two_letters_code%_tpanalyser.en.ts"
   }
 ]
