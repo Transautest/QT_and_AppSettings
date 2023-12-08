@@ -20,6 +20,8 @@ files: [
   },
   {
     "source": "/ToolpathAnalyser/files/language/tpanalyser.en.ts",
-    "translation": "/ToolpathAnalyser/files/language/%two_letters_code%_tpanalyser.en.ts"
+    "translation": "/ToolpathAnalyser/files/language/%two_letters_code%_tpanalyser.en.ts",
+    "dest": "/ToolpathAnalyser/files/language/tpanalyser.en.ts",
+    "type": "ts"
   }
 ]
