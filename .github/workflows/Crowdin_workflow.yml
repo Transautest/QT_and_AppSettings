@@ -1,7 +1,7 @@
 name: Crowdin Upload and Download
 on:
   push:
-    paths: ['ApplicationSettings/appres/omAppSettingsRes.**', 'ToolpathAnalyser/files/language/tpanalyser.en.ts']
+    paths: ['ApplicationSettings/appres/omAppSettingsRes.*', 'ToolpathAnalyser/files/language/*.ts']
     branches: [ main ]
 jobs:
   upload:
