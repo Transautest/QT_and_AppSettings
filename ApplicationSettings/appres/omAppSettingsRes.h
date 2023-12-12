@@ -2,7 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by omAppSettingsRes.rc
 //
-#define IDS_AST_LABEL_CURRENT_USER      678
+#define IDS_AST_LABEL_CURRENT_USER      101
 #define IDS_AST_LABEL_ALL_USERS         102
 #define IDS_AST_LABEL_SYSTEM            102
 #define IDS_AST_MACHINE_LANGUAGE        103
@@ -47,10 +47,8 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        108
-#define _APS_NEXT_COMMAND_VALUE         400001
+#define _APS_NEXT_COMMAND_VALUE         40001
 #define _APS_NEXT_CONTROL_VALUE         1021
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
-
-#change22222
