@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "omAppSettingsRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_POLISH, SUBLANG_POLISH_POLAND
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "omAppSettingsRes.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#include ""omAppSettingsRes.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_POLISH, SUBLANG_POLISH_POLAND
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AST_MAINDLG DIALOGEX 0, 0, 187, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Application Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    L1sTEXT           "Four user",IDC_STATIC,7,10,22,20
+    COMBOBOX        IDC_AST_SETTINGS_TYPE,60,7,120,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_AST_LINE1,7,23,173,8
+    LTEXT           "Language",IDC_STATIC,7,38,32,8
+    COMBOBOX        IDC_AST_LANGUAGE,60,35,120,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Registered applications",IDC_AST_LINE2,7,51,173,8
+    LTEXT           "",IDC_AST_APPLICATIONS,7,63,119,50,WS_BORDER
+    PUSHBUTTON      "New...",IDC_AST_NEW,130,63,50,14
+    PUSHBUTTON      "Edit...",IDC_AST_EDIT,130,81,50,14
+    PUSHBUTTON      "Delete",IDC_AST_DELETE,130,99,50,14
+    LTEXT           "",IDC_AST_LINE3,7,117,173,8
+    DEFPUSHBUTTON   "OK",IDOK,22,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,76,129,50,14
+    PUSHBUTTON      "Help",IDHELP,130,129,50,14
+END
+
+IDD_AST_EDIT_APPLICATION DIALOGEX 0, 0, 251, 124
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Edit Application"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Key",IDC_STATIC,7,9,13,15
+    COMBOBOX        IDC_AST_KEY,60,7,184,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Name",IDC_STATIC,7,25,19,8
+    EDITTEXT        IDC_AST_NAME,60,23,184,14,ES_AUTOHSCROLL
+    LTEXT           "Program",IDC_STATIC,7,43,28,8
+    EDITTEXT        IDC_AST_PROGRAM,60,41,169,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "",IDC_AST_BROWSE_EXE,229,41,15,14,BS_ICON
+    LTEXT           "Arguments",IDC_STATIC,7,61,36,8
+    EDITTEXT        IDC_AST_ARGUMENTS,60,59,184,14,ES_AUTOHSCROLL
+    CONTROL         "All versions",IDC_AST_ALL_VERSIONS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,77,184,10
+    LTEXT           "",IDC_AST_LINE1,7,91,237,8
+    DEFPUSHBUTTON   "OK",IDOK,140,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,194,103,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_AST_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_AST_EDIT_APPLICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_AST_BROWSE_EXE      ICON                    "browse_exe.ico"
+
+IDI_AST_APP             ICON                    "app.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_AST_MAINDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_AST_LABEL_CURRENT_USER "Current user"
+    IDS_AST_LABEL_SYSTEM    "<System>"
+    IDS_AST_MACHINE_LANGUAGE "%1 <System>"
+    IDS_AST_LABEL_NAME      "Name"
+    IDS_AST_LABEL_PROGRAM   "Program"
+    IDS_AST_LABEL_KEY       "Key"
+    IDS_AST_EXE_FILE_FILTER "Executable file (*.exe)|*.exe|Batch files (*.bat)|*.bat||"
+    IDS_AST_CAPTION_NEW_APPLICATION "New Application"
+    IDS_AST_CAPTION_APP     "Application Settings"
+    IDS_AST_ERR_KEY_EMPTY   "Missing key."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_AST_ERR_MISSING_EXE "Missing program."
+    IDS_AST_SELECT_PROGRAM  "Select program"
+    IDS_AST_LABEL_VERSION   "Version"
+    IDS_AST_VAL_CURRENT     "current"
+    IDS_AST_VAL_ALL         "all"
+    IDS_AST_APP_NAME        "OPEN MIND Application Settings"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "omAppSettingsRes.rc2"  // non-Microsoft Visual C++ edited resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+
+#norealchange2.

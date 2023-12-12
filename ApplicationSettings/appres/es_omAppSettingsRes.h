@@ -2,7 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by omAppSettingsRes.rc
 //
-#define IDS_AST_LABEL_CURRENT_USER      101
+#define IDS_AST_LABEL_CURRENT_USER      678
 #define IDS_AST_LABEL_ALL_USERS         102
 #define IDS_AST_LABEL_SYSTEM            102
 #define IDS_AST_MACHINE_LANGUAGE        103
@@ -53,4 +53,4 @@
 #endif
 #endif
 
-#change2222
+#change22222
