@@ -1768,7 +1768,7 @@ or exact text
     <message id="AE613D52-F531-46B5-A0F6-1F4124B40D36">
       <location filename="S:/Utils/trunk/ToolpathAnalyser/files/ui/selectorTPL.ui" line="+42"/>
       <source>Count</source>
-      <translation>Count</translation>
+      <translation>Counst</translation>
     </message>
   </context>
 </TS>
