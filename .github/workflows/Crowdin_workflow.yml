@@ -1,7 +1,7 @@
 name: Crowdin Upload and Download
 on:
   push:
-    paths: ['ToolpathAnalyser/files/language/tpanalyser.en.ts']
+    paths: ['ToolpathAnalyser/files/language/*.ts']
     branches: [ main ]
 jobs:
   upload:

@@ -7,7 +7,7 @@
 
 files: [
   {
-    "source": "/ToolpathAnalyser/files/language/tpanalyser.en.ts",
-    "translation": "/ToolpathAnalyser/files/language/%two_letters_code%_tpanalyser.en.ts"
+    "source": "/ToolpathAnalyser/files/language/*.ts",
+    "translation": "/ToolpathAnalyser/files/language/%file_name%.%locale%.%file_extension%"
   }
 ]
